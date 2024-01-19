@@ -4,6 +4,8 @@ import PageLayout from "../layouts/PageLayout.astro";
 import Intro from "../components/Intro.astro";
 import AboutTheTheme from "../components/AboutTheTheme.astro";
 import { SITE_TITLE } from "../config";
+import { Image } from 'astro:assets';
+import dog from '../assets/Luke.JPG';
 ---
 
 <PageLayout>
@@ -11,5 +13,6 @@ import { SITE_TITLE } from "../config";
   <Fragment slot="main">
     <Intro />
     <AboutTheTheme />
+    <Image src={dog} alt="My super logo!" />
   </Fragment>
 </PageLayout>
